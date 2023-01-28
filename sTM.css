@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+body,div,a,span,h1,h2,h3,h4,h5,h6,img,li,ol,ul,p,figure,nav{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+}
+
+
+.header{
+    width : 100%;
+    background-image: linear-gradient(90deg, #ddf280, #e4f00a);
+    background-repeat: none;
+    background-size: cover;
+
+}
+
+.header .menu{
+    width : 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header .menu .firstImage a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.header .menu .firstImage a img{
+    height: inherit;
+    width: inherit;
+}
+
+.header .menu .elesMenu{
+    display: flex;
+    list-style: none;
+}
+
+.header .menu .elesMenu li{
+    margin-right: 20px;
+}
+
+.header .menu .elesMenu li a{
+    height: 100%;
+    display: flex;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    line-height: 50px;
+    position: relative;
+}
+
+.header .menu .elesMenu>li>a::before{
+    content: "";
+    background-color: rgb(23, 255, 2);
+    position: absolute;
+    height: 4px;
+    width: 0;
+    bottom: 0;
+    transition: 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);;
+}
+
+.header .menu .elesMenu li:hover>a::before{
+    width: 100%;
+}
+
+
+.header .menu .elesMenu li ul.sub-menu{
+    position: absolute;  /*if lack of this code , you feel uncomfortable*/
+    width: 130px;
+    list-style: none ;
+    display: none;
+    padding: 0;
+    /* z-index: 1; */
+}
+
+.header .menu .elesMenu li:hover>ul.sub-menu{
+    display: block;
+}
+
+
+.header .menu .elesMenu li ul.sub-menu li{
+    background-color: #80b9f2;
+    border-bottom: 1px solid white;
+    margin: 0;
+    position: relative;
+}
+
+.header .menu .elesMenu li ul.sub-menu li:hover{
+    background-color: sienna;
+}
+
+.header .menu .elesMenu li ul.sub-menu li ul.sub-menu{
+    position: absolute;
+    left: 130.5px;
+    top: 0px;
+}
+
+/* ================================================================================= */
+
+.between {
+    max-width: 1476px;
+    height: fit-content;
+    display: flex;
+}
+
+.between .bet-1{
+    width: 15%;
+    background-image: linear-gradient(to right , #4bb314, #f7f306);
+    position: relative;
+}
+
+.between .bet-1 .manyChoose{
+    position: fixed;
+    top: 60px;
+    left: 10px;
+    background-color: white;
+    width: 200px;
+    border-radius: 10px;
+
+}
+
+.between .bet-1 .manyChoose .Choose{
+    padding: 10px 0;
+    border-bottom: 1px solid gray;
+}
+
+.between .bet-1 .manyChoose .Choose:last-child{
+    padding: 10px 0;
+    border-bottom: none;
+}
+
+.between .bet-1 .manyChoose .Choose a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgb(10, 10, 10);
+    text-indent: 10px;
+}
+
+.between .bet-1 .manyChoose .Choose:hover>a{
+    transform: scale(1); /*or padding: 15px 0; */
+    color: white;
+    font-size: 22px;
+    background-color: rgb(67, 56, 56);
+    transition: 0.25s ease-in-out;
+    width: 100%;
+}
+
+.between .bet-2{
+    /* background-image: url(https://noithatbinhminh.com.vn/wp-content/uploads/2022/08/background-tet-2023-16.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%; */
+    width: 70%;
+    height: 100%;
+    background-image: linear-gradient(to right , rgb(0, 200, 255) , #05e891);
+}
+
+.between .bet-2>img{
+    width: 100%;
+    height: 350px;
+}
+
+.between .bet-2 h1{
+    text-align: center;
+}
+
+.between .bet-2 ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 125px;
+}
+
+.between .bet-2 ul li{
+    width: 32%;
+    margin-left: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    border-radius: 10px;
+
+}
+
+.between .bet-2 h3{
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.between .bet-2 ul li .pro-top a{
+    display: block;
+    height: 100%;
+}
+
+.between .bet-2 ul li .pro-top a img{
+    width: 100%;
+    height: 200px;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.between .bet-2 ul li .pro-top a:first-child{
+    display: block;
+    height: 100%;
+}
+
+.between .bet-2 ul li .content a.typeOfPro{
+    display: block;
+    text-indent: 5px;
+    text-decoration: none;
+}
+
+.between .bet-2 ul li .content a.namePro{
+    display: block;
+    text-indent: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.between .bet-2 ul li .content .price{
+    color: orange;
+    text-indent: 5px;
+}
+
+.between .bet-2 ul li .pro-top{
+    position: relative;
+    overflow: hidden;
+}
+
+.between .bet-2 .FL ul li:hover a.buy-now{ /*Dùng cho cả 2 class FL và FLu*/
+    bottom: 0px;
+} 
+
+.between .bet-2 .FN ul li:hover a.buy-now{ /*Dùng cho class FN*/
+    bottom: 0px;
+} 
+
+.between .bet-2 ul li .pro-top a.buy-now{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #0860b8;
+    text-align: center;
+    padding: 10px 0;
+    color: aliceblue;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    bottom: -40px;
+    transition: 0.25s ease-in-out;
+    opacity: 0.85;
+}
